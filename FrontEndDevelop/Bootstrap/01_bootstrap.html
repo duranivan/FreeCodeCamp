@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>01 - Bootstrap</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <style>
+    .red-text {
+      color: red;
+    }
+
+    h2 {
+      font-family: Lobster, Monospace;
+    }
+
+    p {
+      font-size: 16px;
+      font-family: Monospace;
+    }
+
+    .thick-green-border {
+      border-color: green;
+      border-width: 10px;
+      border-style: solid;
+      border-radius: 50%;
+    }
+
+    .smaller-image {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+  
+<div class="jumbotron">
+  <!-- Bootstrap alignment using text-center class -->
+  <h2 class="red-text text-center">CatPhotoApp</h2>
+</div>
+
+  <p>Click here for <a href="#">cat photos</a>.</p>
+  
+  <!-- Bootstrap - image-responsive class -->
+  <a href="#"><img class="img-responsive thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back. "></a>
+
+  <!-- Bootstrap - image-responsive class -->
+  <img src="https://bit.ly/fcc-running-cats" alt="" class="img-responsive">
+
+  <br>
+  <div class="row">
+    <!-- Bootstrap buttons adding the btn class -->
+    <!-- Add the btn-block class so the button expand to the entire width of the page -->
+    <!-- Add also the btn-primary class for a blue or main button-->
+    <div class="col-xs-4">
+      <button type="button" class="btn btn-block btn-primary">Like</button>
+    </div>
+    <!-- Button with the btn-info class -->
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info">Info</button>
+    </div>
+    <!-- Button with the btn-dange class -->
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger">Delete</button>
+    </div>
+  </div>
+  
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+    <label><input type="checkbox" name="personality"> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Crazy</label>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>  
+</div>
+</body>
+</html>
