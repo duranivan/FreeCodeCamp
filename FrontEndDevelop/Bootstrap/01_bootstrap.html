@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>01 - Bootstrap</title>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <script src="https://use.fontawesome.com/c3a05d2ae3.js"></script>
   <style>
     .red-text {
       color: red;
@@ -36,7 +38,7 @@
 <!-- Bootstrap alignment using text-center class -->
 <div class="row">
   <div class="col-xs-8">
-    <h2 class="red-text text-center">CatPhotoApp</h2>
+    <h2 class="text-primary text-center">CatPhotoApp</h2>
   </div>
 
   <!-- Bootstrap - image-responsive class -->
@@ -56,15 +58,15 @@
     <!-- Add the btn-block class so the button expand to the entire width of the page -->
     <!-- Add also the btn-primary class for a blue or main button-->
     <div class="col-xs-4">
-      <button type="button" class="btn btn-block btn-primary">Like</button>
+      <button type="button" class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
     </div>
     <!-- Button with the btn-info class -->
     <div class="col-xs-4">
-      <button class="btn btn-block btn-info">Info</button>
+      <button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i> Info</button>
     </div>
     <!-- Button with the btn-dange class -->
     <div class="col-xs-4">
-      <button class="btn btn-block btn-danger">Delete</button>
+      <button class="btn btn-block btn-danger"><i class="fa fa-trash"></i> Delete</button>
     </div>
   </div>
   
@@ -81,13 +83,33 @@
     <li>other cats</li>
   </ol>
   <form action="/submit-cat-photo">
-    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
-    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
-    <label><input type="checkbox" name="personality"> Loving</label>
-    <label><input type="checkbox" name="personality"> Lazy</label>
-    <label><input type="checkbox" name="personality"> Crazy</label>
-    <input type="text" placeholder="cat photo URL" required>
-    <button type="submit">Submit</button>
+    <div class="row">
+      <div class="col-xs-6">
+        <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+      </div>
+      <div class="col-xs-6">
+        <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Loving</label>
+      </div>
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Lazy</label>
+      </div>
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Crazy</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-7">
+        <input type="text" placeholder="cat photo URL" required class="form-control">
+      </div>
+      <div class="col-xs-5">
+        <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Submit</button>
+      </div>
+    </div>
   </form>  
 </div>
 </body>
