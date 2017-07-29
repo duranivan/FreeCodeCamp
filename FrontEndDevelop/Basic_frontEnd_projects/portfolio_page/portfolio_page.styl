@@ -1,0 +1,55 @@
+// Variables
+font-family = 'Lato', sans-serif
+parallax_img = 'https://www.w3schools.com/howto/img_parallax.jpg'
+parallax2_img = 'https://www.w3schools.com/howto/img_parallax.jpg'
+hr_color = gold
+grad_color = rgba(245,245,245,0.9)
+
+
+// Mixins
+parallax(image, height, opacity)
+    background-image: url(image)
+    height: height
+    background-attachment: fixed
+    opacity: opacity
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
+
+// Style
+body, html
+    height: 100%
+    // padding-top: 70px
+    font-family: font-family
+
+hr
+    width: 100%
+    margin-top: 70px
+    margin-bottom: 50px
+    border-top: 1px solid hr_color
+    border-bottom: 1px solid rgba(0,0,0,0.2)
+
+.parallax
+    // parallax(parallax_img, 850px, 0.65)
+    parallax(height: 100%, opacity: 0.65, image: parallax_img)
+
+.parallax2
+    // parallax(parallax_img, 750px, 0.65)
+    parallax(height: 100%, opacity: 0.65, image: parallax_img)
+
+.content
+    font-size: 24px
+    height: fit-content
+    min-height: 100%
+    background-image: linear-gradient(to bottom, grad_color 0%, grad_color 100%), url(parallax_img)
+    background-attachment: fixed
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
+.anchor-adjust
+    display: block
+    position: relative
+    top: -48px
+    visibility: hidden
