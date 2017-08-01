@@ -10,29 +10,39 @@ hr {
   border-top: 1px solid #ffd700;
   border-bottom: 1px solid rgba(0,0,0,0.2);
 }
-.parallax {
-  background-image: url("https://www.w3schools.com/howto/img_parallax.jpg");
+.parallax1 {
+  background-image: url("https://static.pexels.com/photos/5309/dawn-landscape-mountains-nature.jpg");
   height: 100%;
   background-attachment: fixed;
-  opacity: 0.65;
+  opacity: 0.95;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .parallax2 {
-  background-image: url("https://www.w3schools.com/howto/img_parallax.jpg");
+  background-image: url("https://static.pexels.com/photos/15382/pexels-photo.jpg");
   height: 100%;
   background-attachment: fixed;
-  opacity: 0.65;
+  opacity: 0.95;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.content {
+.content1 {
   font-size: 24px;
   height: fit-content;
   min-height: 100%;
-  background-image: linear-gradient(to bottom, rgba(245,245,245,0.9) 0%, rgba(245,245,245,0.9) 100%), url("https://www.w3schools.com/howto/img_parallax.jpg");
+  background-image: linear-gradient(to bottom, rgba(245,245,245,0.7) 0%, rgba(245,245,245,0.7) 100%), url("https://static.pexels.com/photos/5309/dawn-landscape-mountains-nature.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content2 {
+  font-size: 24px;
+  height: fit-content;
+  min-height: 100%;
+  background-image: linear-gradient(to bottom, rgba(245,245,245,0.7) 0%, rgba(245,245,245,0.7) 100%), url("https://static.pexels.com/photos/15382/pexels-photo.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

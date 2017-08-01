@@ -1,9 +1,10 @@
 // Variables
 font-family = 'Lato', sans-serif
-parallax_img = 'https://www.w3schools.com/howto/img_parallax.jpg'
-parallax2_img = 'https://www.w3schools.com/howto/img_parallax.jpg'
+// parallax_img = 'https://static.pexels.com/photos/169789/pexels-photo-169789.jpeg'
+parallax1_img = 'https://static.pexels.com/photos/5309/dawn-landscape-mountains-nature.jpg'
+parallax2_img = 'https://static.pexels.com/photos/15382/pexels-photo.jpg'
 hr_color = gold
-grad_color = rgba(245,245,245,0.9)
+grad_color = rgba(245,245,245,0.7)
 
 
 // Mixins
@@ -12,6 +13,16 @@ parallax(image, height, opacity)
     height: height
     background-attachment: fixed
     opacity: opacity
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
+content(image)
+    font-size: 24px
+    height: fit-content
+    min-height: 100%
+    background-image: linear-gradient(to bottom, grad_color 0%, grad_color 100%), url(image)
+    background-attachment: fixed
     background-position: center
     background-repeat: no-repeat
     background-size: cover
@@ -30,23 +41,19 @@ hr
     border-top: 1px solid hr_color
     border-bottom: 1px solid rgba(0,0,0,0.2)
 
-.parallax
+.parallax1
     // parallax(parallax_img, 850px, 0.65)
-    parallax(height: 100%, opacity: 0.65, image: parallax_img)
+    parallax(height: 100%, opacity: 0.95, image: parallax1_img)
 
 .parallax2
     // parallax(parallax_img, 750px, 0.65)
-    parallax(height: 100%, opacity: 0.65, image: parallax_img)
+    parallax(height: 100%, opacity: 0.95, image: parallax2_img)
 
-.content
-    font-size: 24px
-    height: fit-content
-    min-height: 100%
-    background-image: linear-gradient(to bottom, grad_color 0%, grad_color 100%), url(parallax_img)
-    background-attachment: fixed
-    background-position: center
-    background-repeat: no-repeat
-    background-size: cover
+.content1
+    content(parallax1_img)
+
+.content2
+    content(parallax2_img)
 
 .anchor-adjust
     display: block
