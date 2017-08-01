@@ -1,0 +1,71 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Ivan Duran - Portfolio
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css', integrity='sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ', crossorigin='anonymous')
+    link(rel='stylesheet', type='text/css', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+    link(rel='stylesheet', type='text/css', href='portfolio_page.css')
+    link(href='https://fonts.googleapis.com/css?family=Lato', rel='stylesheet')
+    script(src='https://code.jquery.com/jquery-3.1.1.js')
+
+  body(data-spy='scroll', data-target='.navbar', data-offset='150')
+    // <body>
+
+    nav.navbar.navbar-toggleable-sm.navbar-light.bg-faded.fixed-top
+      button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      a.navbar-brand.text-muted(href='#home'): h4: strong Ivan Duran
+      #navbarSupportedContent.collapse.navbar-collapse
+        //- ul.navbar-nav.ml-auto
+        ul.nav.nav-pills.ml-auto
+          li.nav-item
+            a.nav-link(href='#home') Home
+          li.nav-item
+            a.nav-link(href='#about') About
+          li.nav-item
+            a.nav-link(href='#portfolio') Portfolio
+          li.nav-item
+            a.nav-link(href='#contact') Contact
+
+    #home
+    .parallax
+
+    #about.anchor-adjust
+    .container-fluid.content
+      .row
+        // <div class="col-xs-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2">
+        .col-xs-12.col-sm-10.offset-sm-1
+          hr
+          h1.text-center About Me
+          br
+          p.text-center I am a Web Developer and Economist/Data Scientist.
+          hr
+    .parallax2
+
+    #portfolio.anchor-adjust
+    .container-fluid.content
+      .row
+        // <div class="col-xs-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2">
+        .col-xs-12.col-sm-10.offset-sm-1
+          hr
+          h1.text-center Portfolio
+          br
+          p This is my portfolio:
+          hr
+    .parallax2
+
+    #contact.anchor-adjust
+    .container-fluid.content
+      .row
+        // <div class="col-xs-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2">
+        .col-xs-12.col-sm-10.offset-sm-1
+          hr
+          h1.text-center Contact Me
+          p Contact me at...
+          hr
+    .parallax
+      
+    script(type='text/javascript', src='portfolio_page.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', integrity='sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', integrity='sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn', crossorigin='anonymous')

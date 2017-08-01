@@ -44,3 +44,8 @@ hr {
   top: -48px;
   visibility: hidden;
 }
+@media (max-width: 540px) {
+  .anchor-adjust {
+    top: -55.199999999999996px;
+  }
+}
