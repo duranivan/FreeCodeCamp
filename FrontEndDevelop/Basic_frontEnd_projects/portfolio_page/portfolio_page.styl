@@ -3,6 +3,8 @@ font-family = 'Lato', sans-serif
 // parallax_img = 'https://static.pexels.com/photos/169789/pexels-photo-169789.jpeg'
 parallax1_img = 'https://static.pexels.com/photos/5309/dawn-landscape-mountains-nature.jpg'
 parallax2_img = 'https://static.pexels.com/photos/15382/pexels-photo.jpg'
+parallax3_img = 'https://static.pexels.com/photos/258524/pexels-photo-258524.jpeg'
+parallax4_img = 'https://static.pexels.com/photos/5309/dawn-landscape-mountains-nature.jpg'
 hr_color = gold
 grad_color = rgba(245,245,245,0.7)
 
@@ -40,6 +42,31 @@ hr
     margin-bottom: 50px
     border-top: 1px solid hr_color
     border-bottom: 1px solid rgba(0,0,0,0.2)
+nav
+    padding 15px !important
+    transition: 0.6s
+    background #3F3F3F
+
+.top-nav-collapse
+    @media (min-width 768px)
+        padding 2px 15px !important
+
+a.navbar-brand
+    color #B8B8B8 !important
+    &:hover, &:focus
+        color #B8B8B8 !important
+
+a.nav-link
+    color #02A2EC
+
+.anchor-adjust
+    display: block
+    position: relative
+    top: -47px
+    visibility: hidden
+
+    @media (max-width: 540px)
+        top -48px * 1.15
 
 .parallax1
     // parallax(parallax_img, 850px, 0.65)
@@ -49,17 +76,17 @@ hr
     // parallax(parallax_img, 750px, 0.65)
     parallax(height: 100%, opacity: 0.95, image: parallax2_img)
 
+.parallax3
+    parallax(height: 100%, opacity: 0.95, image: parallax3_img)
+
+.parallax4
+    parallax(height: 100%, opacity: 0.95, image: parallax4_img)
+
 .content1
     content(parallax1_img)
 
 .content2
     content(parallax2_img)
 
-.anchor-adjust
-    display: block
-    position: relative
-    top: -48px
-    visibility: hidden
-
-    @media (max-width: 540px)
-        top -48px * 1.15
+.content3
+    content(parallax3_img)
