@@ -41,6 +41,14 @@ a.nav-link {
     top: -55.199999999999996px;
   }
 }
+.img-thumbnail {
+  margin-bottom: 5%;
+}
+.hoverish {
+  color: #fff !important;
+  cursor: default;
+  background-color: #0275d8;
+}
 .parallax1 {
   background-image: url("https://static.pexels.com/photos/191839/pexels-photo-191839.jpeg");
   height: 100%;

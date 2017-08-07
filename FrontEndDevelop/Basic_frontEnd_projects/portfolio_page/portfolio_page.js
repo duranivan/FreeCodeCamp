@@ -15,6 +15,9 @@ $(document).ready(function() {
     $(window).scroll(function() {
         checkOffset();
     });
+
+    // Navlinks hover effect
+    navlinkHover();
 });
 
 // Smooth scrolling to target
@@ -54,6 +57,22 @@ $('a[href*="#"]')
       }
     }
   });
+
+  // Add active class when hover over navbar link
+  function navlinkHover() {
+    let navlinks = document.querySelectorAll('a.nav-link');
+    navlinks.forEach(item => {
+      if (!$(item).hasClass('active')) { 
+        $(item).hover(
+          function() {
+            $(item).addClass('hoverish');
+          }, function() {
+            $(item).removeClass('hoverish');
+          });
+      }
+    });
+  }
+  
 
   // // Scrolling at different speeds
   // $(document).ready(function(){
