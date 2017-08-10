@@ -68,8 +68,11 @@ a.nav-link
     @media (max-width: 540px)
         top -48px * 1.15
 
-.img-thumbnail
+.img-container img
     margin-bottom 5%
+    &:hover
+        transition 0.5s
+        transform scale(1.1)
 
 .hoverish
     // copied from nav-link.active bootstrap.css file

@@ -41,8 +41,12 @@ a.nav-link {
     top: -55.199999999999996px;
   }
 }
-.img-thumbnail {
+.img-container img {
   margin-bottom: 5%;
+}
+.img-container img:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 .hoverish {
   color: #fff !important;
