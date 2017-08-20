@@ -41,12 +41,20 @@ a.nav-link {
     top: -55.199999999999996px;
   }
 }
+.img-container {
+  overflow: hidden;
+  border: 4px solid #fff;
+  border-radius: 2%;
+}
 .img-container img {
-  margin-bottom: 5%;
+  max-width: 100%;
 }
 .img-container img:hover {
   transition: 0.5s;
-  transform: scale(1.1);
+  transform: scale(1.2);
+}
+.box {
+  margin-bottom: 5%;
 }
 .hoverish {
   color: #fff !important;

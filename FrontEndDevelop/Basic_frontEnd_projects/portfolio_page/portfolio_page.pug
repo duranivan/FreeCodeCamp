@@ -1,3 +1,6 @@
+  //- Variables
+  - var contentContainer = ['col-xs-12', 'col-sm-12', 'col-md-8', 'offset-md-2']
+
 doctype html
 html(lang='en')
   head
@@ -33,18 +36,15 @@ html(lang='en')
     #home
     .parallax.parallax1
     
-    //- Variables
-    - var contentContainer = ['col-xs-12', 'col-sm-12', 'col-md-8', 'offset-md-2']
-
     #about.anchor-adjust
     .container-fluid.parallax.content1
       .row
-        //- <div class="col-xs-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2">
         div(class=contentContainer)
           hr
           h1.text-center About Me
           br
-          p.text-center I am a Web Developer and Economist/Data Scientist.
+          p.text-center.
+            I am a Web Developer, Economist/Data Scientist, and Deeplearning enthusiast.
           hr
     .parallax.parallax2
 
@@ -59,7 +59,7 @@ html(lang='en')
           p This is my portfolio:
           .container: .row
             each val in Array(6)
-              .col-sm-6.img-container: img.img-thumbnail(src="https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450")
+              .col-sm-6.box: .img-container: img(src="https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450")
           hr
     .parallax.parallax3
 
